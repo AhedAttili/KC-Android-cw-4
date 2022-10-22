@@ -1,4 +1,28 @@
 
+// التمرين  الاول
+
+public static int totalGrade(int firstTerm, int secondTerm){
+
+int fistTerm = 98.4%
+int secondTerm = 99.2%
+
+System.out.printIn (int firstTerm + int secondTerm +"%")
+}
+
+public static void temperature(int temperature){
+
+int temperature = 24c
+
+if (temperature >= 23) {
+System.out.printIn("HOT")
+} if (temperature < 23) {
+System.out.printIn("COLD")
+ }
+}
+
+
+// التمرين الثاني
+
         EditText Ed1 = findViewById(R.id.ET1);
         EditText Ed2 = findViewById(R.id.ET2);
         Button b = findViewById(R.id.calculate);
@@ -6,8 +30,34 @@
 
         // اكتب دالة عملية الجمع هنا
 
+ EditText firstEditText = findViewById(R.id.editText3);
+        EditText secondEditText = findViewById(R.id.editText4);
+        EditText thirdEditText = findViewById(R.id.editText2);
+        EditText fourthEditText = findViewById(R.id.editText);
+        Button Calculate = findViewById(R.id.Button);
+        TextView Result = findViewById(R.id.textView);
 
         //اكتب كود تفعيل الزر هنا
 
+Calculate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String a = firstEditText.getText().toString();
+                String b = secondEditText.getText().toString();
+                String c = thirdEditText.getText().toString();
+                String d = fourthEditText.getText().toString();
+
+                int w = Integer.parseInt(a);
+                int x = Integer.parseInt(b);
+                int y = Integer.parseInt(c);
+                int z = Integer.parseInt(d);
+
+                int q = w + x + y + z;
+
+                Result.setText("The Result: " +q);
+            }
+        });
+    }
+}
 
 
